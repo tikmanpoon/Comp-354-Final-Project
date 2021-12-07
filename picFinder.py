@@ -71,3 +71,11 @@ def save_images_to_pc():
             file.write(response.content)
 
     print('Download Finished!\n')
+
+    ##################################################
+    # Test case for pic_finder()
+    if os.path.exists('Images_1'):
+        print("File exists. Test Case Successful.")
+    else:
+        print("File DNE. Test Case Unsuccessful.")
+    ##################################################

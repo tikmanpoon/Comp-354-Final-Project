@@ -1,6 +1,6 @@
 from googlesearch import search
 import pandas as pd
-
+import os
 
 def link_finder():
     # Ask for the input
@@ -21,3 +21,12 @@ def link_finder():
     print("\nDone")
     # Output the file
     link_csv.to_csv('listOfLinks.csv')
+
+    ##################################################
+    # Test case for linkFinder()
+    filepath = "./listOfLinks.csv"
+    if os.path.isfile(filepath):
+        print("File exists. Test Case Successful.")
+    else:
+        print("File DNE. Test Case Unsuccessful.")
+    ##################################################
